@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.LoginController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="774.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@login.css" />
+          </stylesheets>
+         <children>
+            <AnchorPane layoutX="234.0" layoutY="49.0" prefHeight="382.0" prefWidth="306.0" style="-fx-border-color: WHITE; -fx-border-radius: 50;">
+               <children>
+                  <Label layoutX="46.0" layoutY="105.0" text="MEMBERS LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idField" layoutX="54.0" layoutY="160.0" prefHeight="25.0" prefWidth="197.0" promptText="ID" style="-fx-background-radius: 50;" />
+                  <PasswordField fx:id="passField" layoutX="53.0" layoutY="195.0" prefHeight="25.0" prefWidth="198.0" promptText="Password" style="-fx-background-radius: 50;" />
+                  <Button fx:id="loginBtn" layoutX="130.0" layoutY="280.0" mnemonicParsing="false" onAction="#loginBtnOnClick" style="-fx-background-radius: 50;" text="Login" />
+                  <Hyperlink fx:id="forgotPassField" layoutX="99.0" layoutY="256.0" onAction="#forgotPassFieldOnClick" text="Forgot Password?" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="guestLink" layoutX="166.0" layoutY="196.0" onAction="#guestLinkOnClick" text="Login as Guest" />
+                  <ComboBox fx:id="loginComboBox" layoutX="77.0" layoutY="231.0" onAction="#loginComboBoxOnClick" prefWidth="150.0" style="-fx-background-radius: 50;" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="574.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

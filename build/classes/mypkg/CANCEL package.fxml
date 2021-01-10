@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.CANCELPackageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nameField" layoutX="151.0" layoutY="87.0" promptText="Enter name" />
+            <TextField fx:id="emailField" layoutX="151.0" layoutY="130.0" promptText="Enter email" />
+            <Button fx:id="showPackageButton" layoutX="248.0" layoutY="222.0" mnemonicParsing="false" onAction="#showPackageButtonOnClick" text="Show Package" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

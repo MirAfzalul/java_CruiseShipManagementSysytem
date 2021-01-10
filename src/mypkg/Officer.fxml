@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.OfficerController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="47.0" prefWidth="200.0" />
+            <Button fx:id="keepProtocolRecBtn" layoutX="34.0" layoutY="75.0" mnemonicParsing="false" onAction="#keepProtocolRecBtnOnClick" text="Keep Protocol Record" />
+            <Button fx:id="keepShipRecBtn" layoutX="46.0" layoutY="115.0" mnemonicParsing="false" onAction="#keepShipRecBtnOnClick" text="Keep ship Record" />
+            <Button fx:id="shipMtnRec" layoutX="34.0" layoutY="154.0" mnemonicParsing="false" onAction="#shipMtnRecOnClick" text="Ship Maintance Record" />
+            <Button fx:id="checkDutyTimeBtn" layoutX="51.0" layoutY="200.0" mnemonicParsing="false" onAction="#checkDutyTimeBtnOnClick" text="Check Duty time" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="124.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logOutBtn" layoutX="51.0" layoutY="303.0" mnemonicParsing="false" onAction="#logOutBtnOnClick" text="Log Out" />
+            <Label layoutX="31.0" layoutY="89.0" text="Status: " />
+            <Label fx:id="statusLabel" layoutX="67.0" layoutY="89.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#menuItemCloseOnAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="timeTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="54.6666259765625" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="78.0" text="Name" />
+            <TableColumn fx:id="timeCol" prefWidth="65.99996948242188" text="Time" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

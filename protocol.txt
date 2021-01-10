@@ -1,0 +1,1 @@
+22 22 22 Hong Kong 111 10 20 50 Singapore hi 50 10 2 Singapore hey 10 20 5 Japan rtrtr 15 6 12 China  10 10 6 Malaysia 80 25 30 10 Singapore hello 50 25 5 China yes 50 100 5 China yes 100 100 5 China yes 

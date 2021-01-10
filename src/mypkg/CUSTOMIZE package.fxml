@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.CUSTOMIZEPackageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" layoutX="59.0" layoutY="44.0" prefHeight="205.0" prefWidth="225.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="115.00001017252605" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="106.66666158040366" minHeight="10.0" prefHeight="44.666656494140625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="129.33331298828125" minHeight="10.0" prefHeight="41.333343505859375" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="129.33331298828125" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="57.33331298828125" minHeight="10.0" prefHeight="46.33333333333334" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Items" />
+                  <Label text="Delux Room" GridPane.rowIndex="1" />
+                  <Label text="Access to pool" GridPane.rowIndex="2" />
+                  <Label text="Access to Casino " GridPane.rowIndex="3" />
+                  <Label text="GYM&amp;Spa" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="deluxRoomCheckbox" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#deluxRoomCheckboxOnClick" text="200" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label layoutX="150.0" layoutY="20.0" text="In USD" GridPane.columnIndex="1" />
+                  <CheckBox fx:id="poolCheckbox" layoutX="289.0" layoutY="60.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#poolCheckboxOnClick" text="50" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="casinoCheckbox" layoutX="289.0" layoutY="102.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#casinoCheckboxOnClick" text="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="gymSpaCheckbox" layoutX="219.0" layoutY="142.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#gymSpaCheckboxOnClick" text="100" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <RadioButton fx:id="twoPeopleRB" layoutX="70.0" layoutY="266.0" mnemonicParsing="false" onAction="#twoPeopleRBOnClick" text="for 2 people" />
+            <RadioButton fx:id="fourPeopleRB" layoutX="213.0" layoutY="266.0" mnemonicParsing="false" onAction="#fourPeopleRBOnClick" text="for 4 people" />
+            <RadioButton fx:id="sixPeopleRB" layoutX="336.0" layoutY="266.0" mnemonicParsing="false" onAction="#sixPeopleRBOnClick" text="for 6 people" />
+            <Button fx:id="calculateButton" layoutX="360.0" layoutY="223.0" mnemonicParsing="false" onAction="#calculateButtonOnClick" text="Calculate Total" />
+            <TextArea fx:id="TextArea" layoutX="299.0" layoutY="86.0" prefHeight="126.0" prefWidth="215.0" promptText="&lt;-------SELECT" />
+            <Button fx:id="cbookButton" layoutX="259.0" layoutY="322.0" mnemonicParsing="false" onAction="#cbookButtonOnClick" text="BOOK" />
+            <Button fx:id="goBackButton" layoutX="423.0" layoutY="322.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" text="GO BACK" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
